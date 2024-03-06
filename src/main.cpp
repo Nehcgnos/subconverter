@@ -140,7 +140,7 @@ int main(int argc, char *argv[])
     }
     chkArg(argc, argv);
     setcd(global.prefPath); //then switch to pref directory
-    writeLog(0, "SubConverter " VERSION " starting up..", LOG_LEVEL_INFO);
+    writeLog(0, "SubConverter " VERSION " starting up..testtesttesttest", LOG_LEVEL_INFO);
 #ifdef _WIN32
     WSADATA wsaData;
     if (WSAStartup(MAKEWORD(1, 1), &wsaData) != 0)
