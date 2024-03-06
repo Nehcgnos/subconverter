@@ -30,7 +30,8 @@ RUN set -xe && \
     install -d /usr/include/date/ && \
     install -m644 libcron/externals/date/include/date/* /usr/include/date/ && \
     cd .. && \
-    git clone https://github.com/ToruNiina/toml11 --branch="v3.7.1" --depth=6 && \
+    # git clone https://github.com/ToruNiina/toml11 --branch="v3.7.1" --depth=6 && \
+    git clone https://github.com/ToruNiina/toml11 && \
     cd toml11 && \
     # git reset --hard 1beb391 &&\
     git reset --hard c2af975 &&\

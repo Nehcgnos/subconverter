@@ -40,7 +40,7 @@ install -d /usr/local/include/date/
 install -m644 libcron/externals/date/include/date/* /usr/local/include/date/
 cd ..
 
-git clone https://github.com/ToruNiina/toml11 --depth=6
+git clone https://github.com/ToruNiina/toml11
 cd toml11
 git reset --hard 1beb391
 cmake -DCMAKE_CXX_STANDARD=11 .
