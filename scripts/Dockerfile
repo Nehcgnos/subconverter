@@ -32,7 +32,8 @@ RUN set -xe && \
     cd .. && \
     git clone https://github.com/ToruNiina/toml11 --branch="v3.7.1" --depth=6 && \
     cd toml11 && \
-    git reset --hard 1beb391 &&\
+    # git reset --hard 1beb391 &&\
+    git reset --hard c2af975 &&\
     cmake -DCMAKE_CXX_STANDARD=11 . && \
     make install -j $THREADS && \
     cd .. && \
